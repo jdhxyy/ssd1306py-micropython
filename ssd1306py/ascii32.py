@@ -48,5 +48,5 @@ def display(oled, string, x_axis, y_axis):
                 b = '0' + b
             for x in range(0, 8):
                 oled.pixel(x_axis + offset + x, y + y_axis, int(a[x]))
-                oled.pixel(x_axis + offset + x + 16, y + y_axis, int(b[x]))
+                oled.pixel(x_axis + offset + x + 8, y + y_axis, int(b[x]))
         offset += 16
