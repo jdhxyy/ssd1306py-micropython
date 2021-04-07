@@ -1,6 +1,5 @@
 .idea/
 .pytest_cache
-*.txt
 *.log
 build/
 *.egg-info/
