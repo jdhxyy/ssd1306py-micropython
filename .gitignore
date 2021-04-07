@@ -1,0 +1,8 @@
+.idea/
+.pytest_cache
+*.txt
+*.log
+build/
+*.egg-info/
+dist/
+ssd1306/__pycache__/

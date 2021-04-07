@@ -1,0 +1,2 @@
+include README.md
+include ssd1306py/*.txt
