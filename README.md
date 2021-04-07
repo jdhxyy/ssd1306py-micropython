@@ -17,10 +17,13 @@ pip install --target=d:/package micropython-ssd1306py
 ```
 
 下载后目录：
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210407155442150.png)
+
 删除掉无关文件README和egg-info，将ssd1306py文件夹放在设备的lib目录下。**注意：必须放在lib目录下**
 
 在设备中的目录：
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210407155701828.png)
 
 ## 特点
@@ -35,6 +38,7 @@ pip install --target=d:/package micropython-ssd1306py
 ## 硬件连接
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210407150355383.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2pkaDk5,size_16,color_FFFFFF,t_70)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210407150411722.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2pkaDk5,size_16,color_FFFFFF,t_70)
+
 ## API
 ```python
 def init_i2c(scl, sda, width, height):
