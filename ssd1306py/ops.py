@@ -18,16 +18,17 @@ _width = 0
 _height = 0
 
 
-def init_i2c(scl, sda, width, height):
+def init_i2c(scl, sda, width, height, i2c=-1):
     """
     初始化i2c接口
     :param scl: i2c的时钟脚
     :param sda: i2c的数据脚
     :param width: oled屏幕的宽度像素
     :param height: oled屏幕的高度像素
+    :param i2c: i2c口
     """
     global _oled, _width, _height
-    _i2c = machine.I2C(-1, scl=machine.Pin(scl), sda=machine.Pin(sda))
+    _i2c = machine.I2C(i2c, scl=machine.Pin(scl), sda=machine.Pin(sda))
     _width = width
     _height = height
     _oled = ssd1306.SSD1306_I2C(_width, _height, _i2c)
